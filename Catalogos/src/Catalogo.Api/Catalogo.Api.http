@@ -1,0 +1,27 @@
+@Catalogo.Api_HostAddress = http://localhost:5000
+
+GET {{ Catalogo.Api_HostAddress }}/api/productos/codigo?value=Qk7vCkL3
+Accept: application/json
+
+###
+
+GET {{ Catalogo.Api_HostAddress }}/api/productos/codigo/Qk7vCkL3
+Accept: application/json
+
+###
+
+GET {{ Catalogo.Api_HostAddress }}/api/productos
+Accept: application/json
+
+###
+
+POST {{ Catalogo.Api_HostAddress }}/api/productos
+Accept: application/json
+Content-Type: application/json
+{
+  "nombre": "Mocha",
+  "descripcion": "Mi Gato",
+  "precio": 1500,
+  "IdCategoria":"E46F123D-6A21-44C6-AA28-1A3CC77D4539"
+}
+

@@ -1,0 +1,69 @@
+@CarritoCompras.Api_HostAddress = http://localhost:5001
+
+
+GET {{CarritoCompras.Api_HostAddress}}/api/Carrito?CarritoId=889D70EA-9BFA-45C7-B40F-0EE00FE73613
+Accept: application/json
+
+###
+
+GET {{CarritoCompras.Api_HostAddress}}/api/Carritos/INIT_CODE
+Accept: application/json
+
+###
+//Consulta Carrito
+GET {{CarritoCompras.Api_HostAddress}}/api/carritos/init/elementos
+Accept: application/json
+
+###
+
+POST {{CarritoCompras.Api_HostAddress}}/api/carritos/7291B611-6DF1-44FD-887D-514DDCB9A5C2/elementos
+Accept: application/json
+Content-Type: application/json
+
+{
+  "codigo": "83EOsXOn",
+  "cantidad": 2
+}
+
+###
+
+POST {{CarritoCompras.Api_HostAddress}}/api/carritos/7291B611-6DF1-44FD-887D-514DDCB9A5C2/elementos
+Accept: application/json
+Content-Type: application/json
+
+{
+  "codigo": "Codigo Error",
+  "cantidad": 2
+}
+###
+
+POST {{CarritoCompras.Api_HostAddress}}/api/carritos/7291B611-6DF1-44FD-887D-514DDCB9A5C2/elementos
+Accept: application/json
+Content-Type: application/json
+
+{
+  "codigo": "",
+  "cantidad": 0
+}
+###
+
+
+PUT {{CarritoCompras.Api_HostAddress}}/api/elementos/6a82970c-21ae-4490-81ac-428a82b65ef9
+Accept: application/json
+Content-Type: application/json
+
+{
+  "CodigoProducto": "lR7DFjE",
+  "Cantidad": 35
+}
+###
+
+DELETE {{CarritoCompras.Api_HostAddress}}/api/elementos/6a82970c-21ae-4490-81ac-428a82b65ef9
+Accept: application/json
+
+
+###
+
+get {{CarritoCompras.Api_HostAddress}}/api/elementos/F9F12514-3453-403E-BF78-0D7FDAED5664
+Accept: application/json
+
